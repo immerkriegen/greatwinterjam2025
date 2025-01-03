@@ -1,0 +1,26 @@
+[gd_scene load_steps=6 format=3 uid="uid://blgufyfrmtbhe"]
+
+[ext_resource type="Script" uid="uid://d2yeijafkenqy" path="res://Assets/Scripts/ingredient_item.gd" id="1_cdrrw"]
+[ext_resource type="ArrayMesh" uid="uid://dine8v1m3dfmu" path="res://Assets/Modles/kenney_holiday-kit/Models/food/carton.obj" id="1_mthe1"]
+[ext_resource type="Resource" uid="uid://d33pk25ui280y" path="res://Assets/Scripts/ResourceObj/milk.tres" id="2_fwy7a"]
+[ext_resource type="Material" uid="uid://cvqmyy30nbctd" path="res://Assets/Scenes/flat2.tres" id="3_fwy7a"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_eplsq"]
+radius = 1.19306
+
+[node name="Milk" type="Area3D"]
+collision_layer = 3
+collision_mask = 3
+script = ExtResource("1_cdrrw")
+ingredientType = ExtResource("2_fwy7a")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.882581, 0)
+shape = SubResource("SphereShape3D_eplsq")
+
+[node name="Carton" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, 0, 0, 0)
+material_override = ExtResource("3_fwy7a")
+mesh = ExtResource("1_mthe1")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

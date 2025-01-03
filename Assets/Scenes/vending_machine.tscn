@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dft084o6l847b"]
+
+[ext_resource type="ArrayMesh" uid="uid://b233w2p3c0qe4" path="res://Assets/Modles/prototype_asset_pack/OBJ format/freezers-standing.obj" id="1_routq"]
+[ext_resource type="Material" uid="uid://bpjumsvp54s5t" path="res://Assets/Scenes/flat.tres" id="1_sio80"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_t6uw6"]
+radius = 2.97537
+
+[node name="Node3D" type="Area3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.381176)
+shape = SubResource("SphereShape3D_t6uw6")
+
+[node name="Freezers-standing" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+material_override = ExtResource("1_sio80")
+mesh = ExtResource("1_routq")

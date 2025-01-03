@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cyqknor7panwa"
+path="res://.godot/imported/cabin-doorway-right.obj-40de8c1b321618b08fa845e1dc48c4ef.mesh"
+
+[deps]
+
+files=["res://.godot/imported/cabin-doorway-right.obj-40de8c1b321618b08fa845e1dc48c4ef.mesh"]
+
+source_file="res://Assets/Modles/kenney_holiday-kit/Models/OBJ format/cabin-doorway-right.obj"
+dest_files=["res://.godot/imported/cabin-doorway-right.obj-40de8c1b321618b08fa845e1dc48c4ef.mesh", "res://.godot/imported/cabin-doorway-right.obj-40de8c1b321618b08fa845e1dc48c4ef.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

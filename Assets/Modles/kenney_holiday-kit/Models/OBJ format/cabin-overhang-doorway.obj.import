@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://433uqnow2giq"
+path="res://.godot/imported/cabin-overhang-doorway.obj-0bba76dd336f71f3270e1da2cc6ff520.mesh"
+
+[deps]
+
+files=["res://.godot/imported/cabin-overhang-doorway.obj-0bba76dd336f71f3270e1da2cc6ff520.mesh"]
+
+source_file="res://Assets/Modles/kenney_holiday-kit/Models/OBJ format/cabin-overhang-doorway.obj"
+dest_files=["res://.godot/imported/cabin-overhang-doorway.obj-0bba76dd336f71f3270e1da2cc6ff520.mesh", "res://.godot/imported/cabin-overhang-doorway.obj-0bba76dd336f71f3270e1da2cc6ff520.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://xcgq8sckhn04"
+path="res://.godot/imported/gingerbread-woman.obj-5e340568d77c6d5141a3060a7fc67773.mesh"
+
+[deps]
+
+files=["res://.godot/imported/gingerbread-woman.obj-5e340568d77c6d5141a3060a7fc67773.mesh"]
+
+source_file="res://Assets/Modles/kenney_holiday-kit/Models/OBJ format/gingerbread-woman.obj"
+dest_files=["res://.godot/imported/gingerbread-woman.obj-5e340568d77c6d5141a3060a7fc67773.mesh", "res://.godot/imported/gingerbread-woman.obj-5e340568d77c6d5141a3060a7fc67773.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

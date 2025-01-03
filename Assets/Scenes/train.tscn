@@ -1,0 +1,41 @@
+[gd_scene load_steps=7 format=3 uid="uid://cu6oh3chryfjb"]
+
+[ext_resource type="ArrayMesh" uid="uid://diehmmdg3bd5e" path="res://Assets/Modles/kenney_holiday-kit/Models/OBJ format/train-locomotive.obj" id="1_bq6ys"]
+[ext_resource type="Material" uid="uid://bpjumsvp54s5t" path="res://Assets/Scenes/flat.tres" id="1_lub47"]
+[ext_resource type="ArrayMesh" uid="uid://bhy31rta3h2w7" path="res://Assets/Modles/kenney_holiday-kit/Models/OBJ format/train-wagon.obj" id="2_lox7s"]
+[ext_resource type="ArrayMesh" uid="uid://dsi3g214ma3oj" path="res://Assets/Modles/kenney_holiday-kit/Models/OBJ format/train-wagon-short.obj" id="3_a2uw7"]
+[ext_resource type="ArrayMesh" uid="uid://dws6s8nltxan4" path="res://Assets/Modles/kenney_holiday-kit/Models/OBJ format/train-wagon-flat-short.obj" id="4_irf1b"]
+[ext_resource type="ArrayMesh" uid="uid://ddifjj62ofe6b" path="res://Assets/Modles/kenney_holiday-kit/Models/OBJ format/snowman.obj" id="5_fv65a"]
+
+[node name="Node3D" type="Node3D"]
+transform = Transform3D(-2.18557e-07, 0, 5, 0, 5, 0, -5, 0, -2.18557e-07, 0, 0, 0)
+
+[node name="Train-locomotive" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.00586432, 0, -4, 0, 4, 0, 4, 0, -0.00586432, -0.116213, 0, 4.70336)
+material_override = ExtResource("1_lub47")
+mesh = ExtResource("1_bq6ys")
+
+[node name="Train-wagon" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.00586432, 0, -4, 0, 4, 0, 4, 0, -0.00586432, -0.106395, 0, 1.85673)
+material_override = ExtResource("1_lub47")
+mesh = ExtResource("2_lox7s")
+
+[node name="Train-wagon2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.00586432, 0, -4, 0, 4, 0, 4, 0, -0.00586432, -0.081141, 0, -1.09353)
+material_override = ExtResource("1_lub47")
+mesh = ExtResource("2_lox7s")
+
+[node name="Train-wagon-short" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.00586432, 0, -4, 0, 4, 0, 4, 0, -0.00586432, -0.0310297, 0, -5.14927)
+material_override = ExtResource("1_lub47")
+mesh = ExtResource("3_a2uw7")
+
+[node name="Train-wagon-flat-short" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.00586432, 0, -4, 0, 4, 0, 4, 0, -0.00586432, 0.0340753, 0, -3.45891)
+material_override = ExtResource("1_lub47")
+mesh = ExtResource("4_irf1b")
+
+[node name="Snowman" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.00146608, 0, -0.999999, 0, 1, 0, 0.999999, 0, -0.00146608, -0.0125833, 0.430583, -3.45674)
+material_override = ExtResource("1_lub47")
+mesh = ExtResource("5_fv65a")

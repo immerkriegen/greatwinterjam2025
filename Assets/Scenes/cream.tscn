@@ -1,0 +1,26 @@
+[gd_scene load_steps=6 format=3 uid="uid://dqnoxaba6fj85"]
+
+[ext_resource type="Script" uid="uid://d2yeijafkenqy" path="res://Assets/Scripts/ingredient_item.gd" id="1_78o16"]
+[ext_resource type="Resource" uid="uid://orevvp6w27af" path="res://Assets/Scripts/ResourceObj/cream.tres" id="2_78o16"]
+[ext_resource type="ArrayMesh" uid="uid://cvq3q2xj8s4p5" path="res://Assets/Modles/kenney_holiday-kit/Models/food/whipped-cream.obj" id="3_4st0h"]
+[ext_resource type="Material" uid="uid://cvqmyy30nbctd" path="res://Assets/Scenes/flat2.tres" id="3_j8txj"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_eplsq"]
+radius = 1.19306
+
+[node name="Cream" type="Area3D"]
+collision_layer = 3
+collision_mask = 3
+script = ExtResource("1_78o16")
+ingredientType = ExtResource("2_78o16")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.882581, 0)
+shape = SubResource("SphereShape3D_eplsq")
+
+[node name="Whipped-cream" type="MeshInstance3D" parent="."]
+transform = Transform3D(9, 0, 0, 0, 9, 0, 0, 0, 9, 0, 0.61179, 0)
+material_override = ExtResource("3_j8txj")
+mesh = ExtResource("3_4st0h")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

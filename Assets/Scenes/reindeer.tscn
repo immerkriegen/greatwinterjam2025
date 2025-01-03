@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://d22pxyj0wa03e"]
+
+[ext_resource type="ArrayMesh" uid="uid://ol4rbjvil2ic" path="res://Assets/Modles/kenney_holiday-kit/Models/OBJ format/reindeer.obj" id="1_hmprr"]
+
+[node name="Reindeer" type="Node3D"]
+
+[node name="Reindeer" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_hmprr")

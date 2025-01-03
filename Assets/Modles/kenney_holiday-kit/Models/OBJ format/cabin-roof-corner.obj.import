@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ry15ucj2ldyp"
+path="res://.godot/imported/cabin-roof-corner.obj-2a159837eaeb6cb794634caa7b5e99a7.mesh"
+
+[deps]
+
+files=["res://.godot/imported/cabin-roof-corner.obj-2a159837eaeb6cb794634caa7b5e99a7.mesh"]
+
+source_file="res://Assets/Modles/kenney_holiday-kit/Models/OBJ format/cabin-roof-corner.obj"
+dest_files=["res://.godot/imported/cabin-roof-corner.obj-2a159837eaeb6cb794634caa7b5e99a7.mesh", "res://.godot/imported/cabin-roof-corner.obj-2a159837eaeb6cb794634caa7b5e99a7.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

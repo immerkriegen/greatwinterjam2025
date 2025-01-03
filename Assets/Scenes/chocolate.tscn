@@ -1,0 +1,26 @@
+[gd_scene load_steps=6 format=3 uid="uid://bpyiruy3o3u5s"]
+
+[ext_resource type="Script" uid="uid://d2yeijafkenqy" path="res://Assets/Scripts/ingredient_item.gd" id="1_d8udi"]
+[ext_resource type="Resource" uid="uid://cl6ewim5j0ne2" path="res://Assets/Scripts/ResourceObj/chocolate.tres" id="2_d7dg8"]
+[ext_resource type="Material" uid="uid://cvqmyy30nbctd" path="res://Assets/Scenes/flat2.tres" id="3_xwgii"]
+[ext_resource type="ArrayMesh" uid="uid://bip2c45g5jcle" path="res://Assets/Modles/kenney_holiday-kit/Models/food/chocolate-wrapper.obj" id="5_6svvk"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_y7tas"]
+radius = 2.10276
+
+[node name="Chocolate" type="Area3D"]
+collision_layer = 3
+collision_mask = 3
+script = ExtResource("1_d8udi")
+ingredientType = ExtResource("2_d7dg8")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.216066, 0)
+shape = SubResource("SphereShape3D_y7tas")
+
+[node name="Chocolate-wrapper" type="MeshInstance3D" parent="."]
+transform = Transform3D(3.58726, -1.08956, 7.06714, 7.07101, 1.71714, -3.32449, -1.06413, 7.7372, 1.73302, 0, 0, 0)
+material_override = ExtResource("3_xwgii")
+mesh = ExtResource("5_6svvk")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

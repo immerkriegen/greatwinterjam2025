@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b6thw8x0sujav"
+path="res://.godot/imported/cabin-window-a.obj-028a1776e1b127d773bce76767844dac.mesh"
+
+[deps]
+
+files=["res://.godot/imported/cabin-window-a.obj-028a1776e1b127d773bce76767844dac.mesh"]
+
+source_file="res://Assets/Modles/kenney_holiday-kit/Models/OBJ format/cabin-window-a.obj"
+dest_files=["res://.godot/imported/cabin-window-a.obj-028a1776e1b127d773bce76767844dac.mesh", "res://.godot/imported/cabin-window-a.obj-028a1776e1b127d773bce76767844dac.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

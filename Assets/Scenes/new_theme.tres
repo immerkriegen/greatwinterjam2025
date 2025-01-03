@@ -1,0 +1,9 @@
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://ck0qkjh3xvv76"]
+
+[sub_resource type="SystemFont" id="SystemFont_sttt3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sttt3"]
+
+[resource]
+Label/fonts/font = SubResource("SystemFont_sttt3")
+PanelContainer/styles/panel = SubResource("StyleBoxEmpty_sttt3")

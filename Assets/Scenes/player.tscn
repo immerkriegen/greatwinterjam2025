@@ -1,0 +1,43 @@
+[gd_scene load_steps=5 format=3 uid="uid://b522fl2rswqlj"]
+
+[ext_resource type="Script" uid="uid://cpxajuwreoaso" path="res://Assets/Scripts/player.gd" id="1_38rej"]
+[ext_resource type="PackedScene" uid="uid://d3b7wb25nt5re" path="res://Assets/Scenes/PlayerModel.tscn" id="2_7dd06"]
+
+[sub_resource type="SeparationRayShape3D" id="SeparationRayShape3D_7dd06"]
+slide_on_slope = true
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_7dd06"]
+radius = 0.384276
+height = 1.80769
+
+[node name="Player" type="CharacterBody3D"]
+collision_layer = 2
+collision_mask = 3
+script = ExtResource("1_38rej")
+acceleration = 30.0
+falling_gravity_multiplier = 3.0
+dash_speed = 100.0
+gravity = -10.0
+
+[node name="PlayerModel" parent="." instance=ExtResource("2_7dd06")]
+unique_name_in_owner = true
+
+[node name="CamPivot" type="Node3D" parent="."]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.51516, 0)
+
+[node name="SpringArm3D" type="SpringArm3D" parent="CamPivot"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 0)
+shape = SubResource("SeparationRayShape3D_7dd06")
+spring_length = 8.0
+
+[node name="PlayerCam" type="Camera3D" parent="CamPivot/SpringArm3D"]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.637e-07, 0.943354, 5.38945)
+h_offset = 0.72
+v_offset = 0.15
+fov = 90.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.908183, 0)
+shape = SubResource("CapsuleShape3D_7dd06")

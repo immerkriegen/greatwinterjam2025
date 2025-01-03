@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://dmf0a2m0dovu6"]
+
+[ext_resource type="Script" uid="uid://i0gd0up20lkk" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="1_c8o68"]
+[ext_resource type="Script" uid="uid://foa18xngti62" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd" id="2_oqux6"]
+[ext_resource type="Script" uid="uid://bawxc8iwk5an" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="3_vxgda"]
+
+[sub_resource type="Resource" id="Resource_4bitq"]
+script = ExtResource("3_vxgda")
+duration = 1.0
+transition = 0
+ease = 2
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+
+[node name="PhantomCameraHost" type="Node" parent="Camera3D"]
+process_priority = 300
+process_physics_priority = 300
+script = ExtResource("1_c8o68")
+
+[node name="PhantomCamera3D" type="Node3D" parent="."]
+script = ExtResource("2_oqux6")
+tween_resource = SubResource("Resource_4bitq")

@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dps2pm8ccgap4"
+path="res://.godot/imported/can-open.obj-1a57d0732e57452b4902a5006100e90f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/can-open.obj-1a57d0732e57452b4902a5006100e90f.mesh"]
+
+source_file="res://Assets/Modles/kenney_holiday-kit/Models/food/can-open.obj"
+dest_files=["res://.godot/imported/can-open.obj-1a57d0732e57452b4902a5006100e90f.mesh", "res://.godot/imported/can-open.obj-1a57d0732e57452b4902a5006100e90f.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

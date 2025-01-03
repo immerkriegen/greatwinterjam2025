@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://d3b7wb25nt5re"]
+
+[ext_resource type="ArrayMesh" uid="uid://kfq7v6oj21oq" path="res://Assets/Modles/kenney_holiday-kit/Models/OBJ format/gingerbread-man.obj" id="1_m4drs"]
+[ext_resource type="Material" uid="uid://bpjumsvp54s5t" path="res://Assets/Scenes/flat.tres" id="1_ptm5d"]
+[ext_resource type="ArrayMesh" uid="uid://byqrnock6rd1x" path="res://Assets/Modles/kenney_holiday-kit/Models/OBJ format/snowman-hat.obj" id="2_fulcr"]
+[ext_resource type="ArrayMesh" uid="uid://beq4n7kq7638l" path="res://Assets/Modles/Nari2.obj" id="4_2sh6d"]
+[ext_resource type="Material" uid="uid://0nrgcp5m15xf" path="res://Assets/Modles/nari.tres" id="4_7wexb"]
+
+[node name="PlayerModel" type="Node3D"]
+
+[node name="Gingerbread-man" type="MeshInstance3D" parent="."]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
+visible = false
+material_override = ExtResource("1_ptm5d")
+mesh = ExtResource("1_m4drs")
+
+[node name="Snowman-hat" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.997967, 0, 0.0637312, 0.00696255, 0.994014, 0.109026, -0.0633498, 0.109249, -0.991994, -0.00334823, 0.404883, -0.488016)
+visible = false
+material_override = ExtResource("1_ptm5d")
+mesh = ExtResource("2_fulcr")
+
+[node name="Nari2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.5, 0, -2.26494e-07, 0, 1.5, 0, 2.26494e-07, 0, -1.5, 0, -2.99156, -0.22442)
+mesh = ExtResource("4_2sh6d")
+surface_material_override/0 = ExtResource("4_7wexb")
+surface_material_override/1 = ExtResource("4_7wexb")
+surface_material_override/2 = ExtResource("4_7wexb")
+surface_material_override/3 = ExtResource("4_7wexb")
+surface_material_override/4 = ExtResource("4_7wexb")
+surface_material_override/5 = ExtResource("4_7wexb")
+surface_material_override/6 = ExtResource("4_7wexb")
+surface_material_override/8 = ExtResource("4_7wexb")

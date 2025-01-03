@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="ingredient" load_steps=2 format=3 uid="uid://d33pk25ui280y"]
+
+[ext_resource type="Script" uid="uid://xljutvc8y5wt" path="res://Assets/Scripts/ingredient.gd" id="1_wotvv"]
+
+[resource]
+script = ExtResource("1_wotvv")
+name = "milk"
+point = 150
+metadata/_custom_type_script = ExtResource("1_wotvv")

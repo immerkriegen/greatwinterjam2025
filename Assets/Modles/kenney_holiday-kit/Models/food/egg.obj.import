@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cgj70c5644w2v"
+path="res://.godot/imported/egg.obj-5dcaaf7187da4f10555f89f30c5de91e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/egg.obj-5dcaaf7187da4f10555f89f30c5de91e.mesh"]
+
+source_file="res://Assets/Modles/kenney_holiday-kit/Models/food/egg.obj"
+dest_files=["res://.godot/imported/egg.obj-5dcaaf7187da4f10555f89f30c5de91e.mesh", "res://.godot/imported/egg.obj-5dcaaf7187da4f10555f89f30c5de91e.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
